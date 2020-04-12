@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Covid-19 Summary
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Summary</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="Tab 1 page"></app-explore-container> -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Reports:</ion-card-subtitle>
+      <!-- <ion-card-title>Card Title</ion-card-title> -->
+    </ion-card-header>
+    
+    <ion-card-content>
+      <ion-item>
+        <ion-icon name="body-outline" slot="start"></ion-icon>
+        <ion-label color="primary">Total Confirmed</ion-label>
+        <ion-text>{{ global?.TotalConfirmed }}</ion-text> <!-- ?for null checking -->
+      </ion-item>
+      <ion-item>
+        <ion-icon name="heart-outline" slot="start"></ion-icon>
+        <ion-label color="secondary">Total Recovered</ion-label>
+        <ion-text>{{ global?.TotalRecovered }}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="skull-outline" slot="start"></ion-icon>
+        <ion-label color="warning">New Deaths</ion-label>
+        <ion-text>{{ global?.NewDeaths }}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="skull-outline" slot="start"></ion-icon>
+        <ion-label color="danger">Total Deaths</ion-label>
+        <ion-text>{{ global?.TotalDeaths }}</ion-text>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
