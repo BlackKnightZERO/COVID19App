@@ -37,7 +37,7 @@ export class Tab1Page {
   async getData(){
     const loading = await this.loadingController.create({
       message: 'Loading...',
-      duration: 15000
+      duration: 20000
     });
     await loading.present();
 
