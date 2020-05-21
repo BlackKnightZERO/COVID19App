@@ -2,9 +2,9 @@
 Ionic, Angular, api.covid19api.com
 
 on project's root directory(where package.json is located) : 
-npm install 
-ionic build
-ionic serve
+#npm install
+#ionic build
+#ionic serve
 
 ![covid01](https://user-images.githubusercontent.com/29349064/79072921-6588e400-7d05-11ea-926a-d32b489eba32.jpg)
 ![Covid1](https://user-images.githubusercontent.com/29349064/80079828-99200580-8572-11ea-94b2-ac6da63c4122.png)
